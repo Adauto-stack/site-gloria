@@ -1,0 +1,69 @@
+import { useState } from "react"
+import "/./src/estilos/cardAranha.css"
+
+function CardAranha(){
+
+    const [mostrarCarta, setMostrarCarta] = useState(false)
+
+    function abrirCarta(){
+        setMostrarCarta(true)
+    }
+
+    return(
+
+        <div className="carta-container">
+
+            {!mostrarCarta && (
+                <button className="botao-carta" onClick={abrirCarta}>
+                    Mostrar carta 💌
+                </button>
+            )}
+
+            {mostrarCarta && (
+                <>
+                    {/* Corações */}
+                    <div className="coracoes">
+                        {Array.from({length:25}).map((_,i)=>(
+                            <span
+                                key={i}
+                                className="heart"
+                                style={{
+                                    left: Math.random()*100+"%",
+                                    animationDuration:(5+Math.random()*5)+"s"
+                                }}
+                            >
+                                🩵
+                            </span>
+                        ))}
+                    </div>
+
+                    {/* Carta */}
+                    <div className="carta">
+
+                        <h2>💌</h2>
+
+                        <div className="texto-carta">
+
+                            <p>
+                            Oi amor, esse site foi feito pra você com muito amor e carinho, espero que você goste. Eu sou muito grato por você ter entrado na minha vida, um fato curioso é que no inicio do ano nos primeiros dias de aula um dos 
+                            protagonista perguntaram como foi o ano passado em uma palavra e o que você deseja para esse ano, eu fui a primeira pessoa a falar, eu disse que no ano passado foi uma tragédia e pra esse ano eu falei "Glória" foi a primeira
+                            palavra que apareceu na minha cabeça, e esse ano está acontecendo uma coisa inusitada🫣, e eu quero que continue acontecendo, eu gosto de estar ao seu lado, de compartilhar coisas que aconteceu no dia, de te abraçar e de muitas outras coisas que envolve você.
+                            Eu nunca fiz um site desse pra alguém, mas eu queria fazer algo diferente pra você, porque eu sempre quis fazer uma coisa dessa pra alguém especial e você está se tornando essa pessoa especial pra mim, como eu disse lá no inicio "Você é o resultado das minhas orações".
+                            Eu adoraria passar mais tempo ao lado, ser o motivo da sua alegria, ser o motivo do seu sorriso, ser o motivo do seu olhar apaixonado, ser o motivo do seu abraço apertado, ser o motivo da sua felicidade.
+                            </p>
+
+                            <h3>Te Vivo 🩵</h3>
+
+                        </div>
+
+                    </div>
+                </>
+            )}
+
+        </div>
+
+    )
+
+}
+
+export default CardAranha

@@ -1,0 +1,30 @@
+.tempo-juntos {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.contador div {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80px;
+}
+
+.contador span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contador p {
+  margin: 0;
+  font-size: 14px;
+}

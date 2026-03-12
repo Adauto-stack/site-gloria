@@ -1,0 +1,58 @@
+/* Reset básico para evitar que o navegador empurre o conteúdo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pagina-inicial {
+    width: 100vw; /* Usa a largura total da janela */
+    height: 100vh; /* Usa a altura total da janela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    background-color: #1a5c31; /* Cor de fundo base caso a imagem falhe */
+}
+
+.conteudo-inicial {
+    width: 100%;
+    max-width: 480px; /* Limite de largura para não esticar demais em telas grandes */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Título */
+.titulo {
+    font-size: clamp(32px, 8vw, 48px); /* Fonte responsiva: diminui em telas pequenas */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Subtítulo */
+.subtitulo-central {
+    font-size: 20px;
+    color: #d4ffd9;
+    margin-bottom: 40px;
+}
+
+/* Botão */
+.botao {
+    padding: 12px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px; /* Bordas mais arredondadas ficam ótimas nesse estilo */
+    background: #1db954;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    background: #1ed760;
+    box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4);
+}
