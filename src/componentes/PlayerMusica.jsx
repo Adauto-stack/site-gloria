@@ -24,10 +24,10 @@ function PlayerCard() {
 
   return (
     <div className="player-card">
-      <audio ref={audioRef} src="/musica/musica.mp3" />
+      <audio ref={audioRef} src="musica/musica.mp3" />
 
       <img
-        src="/musica/capa.jpg"
+        src="musica/capa.jpg"
         alt="Capa"
         className="capa-musica"
       />
