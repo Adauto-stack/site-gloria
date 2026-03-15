@@ -4,3 +4,5 @@ Para a criação desse site foi utilizado
 - React + Vite
 - CSS
 
+URL do Site:
+https://adauto-stack.github.io/site-gloria/
