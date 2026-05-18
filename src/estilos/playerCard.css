@@ -1,0 +1,123 @@
+/* PLAYER DE MUSICA */
+
+.player-musica {
+  position: fixed;
+
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0,0,0,0.4);
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  border: 2px solid white;
+
+  display: flex;
+
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* BOTÕES */
+
+.player-musica button {
+
+  background: #1db954;
+
+  border: none;
+
+  padding: 8px 10px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  color: white;
+
+}
+
+.player-musica button:hover {
+
+  background: #169c45;
+
+}
+
+/* CARD DA MUSICA */
+
+.player-card {
+
+  width: 240px;
+
+  background: rgba(0,0,0,0.4);
+
+  backdrop-filter: blur(8px);
+
+  border: 2px solid white;
+
+  border-radius: 15px;
+
+  padding: 15px;
+
+  text-align: center;
+
+  color: white;
+
+  margin: 40px auto;
+
+}
+
+/* IMAGEM */
+
+.capa-musica {
+
+  width: 100%;
+  height: 130px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  margin-bottom: 10px;
+
+}
+
+/* CONTROLES */
+
+.controles {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 10px;
+
+}
+
+.controles button {
+
+  border: none;
+
+  background: #1db954;
+
+  color: white;
+
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+}
+
+.controles button:hover {
+
+  background: #169c45;
+
+}

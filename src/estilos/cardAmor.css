@@ -1,0 +1,50 @@
+.card-amor {
+  width: 220px;
+  padding: 15px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 2px solid white;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  backdrop-filter: blur(5px);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efeito quando passa o mouse */
+.card-amor:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* imagem */
+.imagem-amor {
+  width: 100%;
+  height: 160px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+  border: 2px solid white;
+
+  margin-bottom: 10px;
+}
+
+/* texto */
+.texto-amor {
+  color: white;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.cards-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

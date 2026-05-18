@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background: linear-gradient(180deg, #0f3d1e, #1f7a3a, #3cb371);
+
+  overflow-x: hidden;
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* CORAÇÕES */
+
+.heart {
+  position: fixed;
+
+  bottom: -20px;
+
+  font-size: 20px;
+
+  animation: subir 6s linear infinite;
+
+  opacity: 0.8;
+
+  z-index: 0;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes subir {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-110vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center; /* centraliza vertical */
+  align-items: center;     /* centraliza horizontal */
+
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+}
+
+/* LINK DO BOTÃO */
+
+.container a {
+  text-decoration: none;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+/* TITULO */
+
+.titulo-central {
+  font-size: 48px;
+  color: white;
+
+  width: 100%;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 22px;
+  color: #d4ffd9;
+
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+/* BOTÃO */
+
+.botao-proximo {
+  padding: 12px 30px;
+
+  font-size: 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #1db954;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.botao-proximo:hover {
+  transform: scale(1.08);
+
+  background: #169c45;
+}

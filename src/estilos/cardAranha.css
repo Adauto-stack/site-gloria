@@ -1,0 +1,157 @@
+.carta-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:60px 20px;
+}
+
+.carta{
+    width:500px;
+    max-width:90%;
+
+    background:white;
+    color:black;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    border:3px solid #ffffff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+    text-align:center;
+
+    line-height:1.6;
+}
+
+/* espaço do texto */
+
+.texto-carta{
+    margin-top:20px;
+    font-size:18px;
+}
+.carta-container{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+}
+
+/* BOTÃO */
+
+.botao-carta{
+
+    padding:15px 35px;
+
+    font-size:18px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#1db954;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.botao-carta:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* CARTA */
+
+.carta{
+
+    width:500px;
+    max-width:90%;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+    animation:aparecer 1s ease;
+
+}
+
+.texto-carta{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    line-height:1.6;
+
+}
+
+/* ANIMAÇÃO DA CARTA */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+        transform:scale(0.8);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+/* CORAÇÕES */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-20px;
+
+    font-size:22px;
+
+    animation:subir linear infinite;
+
+}
+
+@keyframes subir{
+
+    0%{
+
+        transform:translateY(0);
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-110vh);
+        opacity:0;
+
+    }
+
+}
