@@ -1,0 +1,13 @@
+      <div className="secao-musica">
+        <h3 className="titulodois">Música que eu dedico pra você</h3>
+        <PlayerCard />
+      </div>
+
+            <h3 className="titulodois">Nossos Momentos 🩵</h3>
+      <div className="cards-container">
+        <AlbumFotos casalfotos="fotos/Gloria3.jpg"></AlbumFotos>
+        <AlbumFotos casalfotos="fotos/Gloria6.jpg"></AlbumFotos>
+        <AlbumFotos casalfotos="fotos/agente.jpg"></AlbumFotos>
+        <AlbumFotos casalfotos="fotos/agente1.jpg"></AlbumFotos>
+      </div>
+      <TempoJuntos />

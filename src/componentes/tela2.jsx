@@ -4,9 +4,11 @@ import TempoJuntos from "./TempoJuntos.jsx";
 import CartaAranha from "./CardAranha.jsx";
 import "/./src/estilos/tela2.css";
 import AlbumFotos from "./albumFotos.jsx";
+import Layout from "./layout.jsx";
 function Tela2() {
   return (
     <div>
+      <Layout />
       <h2 className="titulodois">Essas são as coisas que eu amo em você</h2>
       <div className="cards-container">
         <CardAmor
@@ -40,20 +42,11 @@ function Tela2() {
           frase="Amo tudo em você, até seu jeito palmeirense🙄"
         />
       </div>
-      <div className="secao-musica">
-        <h3 className="titulodois">Música que eu dedico pra você</h3>
-        <PlayerCard />
-      </div>
-      <TempoJuntos />
+
+      
       <h3 className="titulodois">Clique aqui para ver uma supresa</h3>
       <CartaAranha />
-      <h3 className="titulodois">Nossos Momentos 🩵</h3>
-      <div className="cards-container">
-        <AlbumFotos casalfotos="fotos/Gloria3.jpg"></AlbumFotos>
-        <AlbumFotos casalfotos="fotos/Gloria6.jpg"></AlbumFotos>
-        <AlbumFotos casalfotos="fotos/agente.jpg"></AlbumFotos>
-        <AlbumFotos casalfotos="fotos/agente1.jpg"></AlbumFotos>
-      </div>
+
     </div>
   );
 }

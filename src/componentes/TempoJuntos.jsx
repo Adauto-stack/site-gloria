@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
-import '/./src/estilos/tempoJuntos.css'
+import "/./src/estilos/tempoJuntos.css";
+
 function TempoJuntos() {
 
-  const dataInicio = new Date("2026-02-20T23:36:00"); // coloque a data que vocês começaram a conversar
+  const dataInicio = new Date("2026-02-20T23:36:00");
 
   const [tempo, setTempo] = useState({
     dias: 0,
     horas: 0,
     minutos: 0,
-    segundos: 0
+    segundos: 0,
   });
 
   useEffect(() => {
@@ -32,31 +33,39 @@ function TempoJuntos() {
   }, []);
 
   return (
-    <div className="tempo-juntos">
-      <h2>Desde que começamos a conversar 💚</h2>
+
+    <div className="tempo-container">
+
+      <h3 className="titulo-tempo">
+        Desde que começamos a conversar 💚
+      </h3>
 
       <div className="contador">
-        <div>
+
+        <div className="caixa-tempo">
           <span>{tempo.dias}</span>
           <p>dias</p>
         </div>
 
-        <div>
+        <div className="caixa-tempo">
           <span>{tempo.horas}</span>
           <p>horas</p>
         </div>
 
-        <div>
+        <div className="caixa-tempo">
           <span>{tempo.minutos}</span>
           <p>min</p>
         </div>
 
-        <div>
+        <div className="caixa-tempo">
           <span>{tempo.segundos}</span>
           <p>seg</p>
         </div>
+
       </div>
+
     </div>
+
   );
 }
 
