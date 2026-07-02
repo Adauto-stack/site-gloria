@@ -33,7 +33,7 @@ function Layout() {
                     to="/TelaMusica"
                     className={location.pathname === "/TelaMusica" ? "ativo" : ""}
                 >
-                    🎵 Nossa Música
+                    🎵 Nossas Músicas
                 </Link>
 
                 <Link
