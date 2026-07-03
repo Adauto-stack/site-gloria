@@ -5,6 +5,7 @@ import PlayerCard1 from "./PlayerMusica1";
 import PlayerCard2 from "./PlayerMusica2";
 import PlayerCard3 from "./PlayerMusica3";
 import PlayerCard4 from "./PlayerMusica4.jsx";
+import PlayerCard5 from "./PlayerMusica5.jsx";
 function TelaMusica (){
     return(
         <div>
