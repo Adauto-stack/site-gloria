@@ -35,12 +35,23 @@ function Layout() {
                 >
                     🎵 Nossas Músicas
                 </Link>
+                <Link
+                    to="/linhadotempo"
+                    className={location.pathname === "/linhadotempo" ? "ativo" : ""}
+                >
+                    🕒 Linha do Tempo
+                </Link>
 
                 <Link
                     to="/TelaAlbum"
                     className={location.pathname === "/TelaAlbum" ? "ativo" : ""}
                 >
                     📸 Nossos Momentos
+                </Link>
+                <Link
+                    to="/fotosdela"
+                    className={location.pathname === "/fotosdela" ? "ativo" : ""}
+                > 😍 Suas fotos que eu amo
                 </Link>
 
             </nav>

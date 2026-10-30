@@ -1,0 +1,164 @@
+/* ============================================================
+   LINHA DO TEMPO
+   Arquivo: src/estilos/linhadotempo.css
+   ============================================================ */
+
+.timeline-pagina {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px 80px;
+  color: #fff;
+}
+
+/* Lista principal. A linha vertical é desenhada pelo ::before */
+.timeline {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Linha vertical no centro */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+/* Cada momento ocupa metade da largura */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  /* Espaço entre os momentos. Aumente se colocar fotos grandes */
+  padding-bottom: 36px;
+}
+
+/* ---------- LADO DIREITO ---------- */
+.timeline-item.direita {
+  margin-left: 50%;
+  padding-left: 28px;
+  text-align: left;
+}
+
+/* ---------- LADO ESQUERDO ---------- */
+.timeline-item.esquerda {
+  padding-right: 28px;
+  text-align: right;
+}
+
+/* ---------- CORAÇÃO NA LINHA ---------- */
+.timeline-marcador {
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  line-height: 1;
+  /* fundo verde para "cortar" a linha atrás do coração (opcional) */
+  background: transparent;
+}
+
+.timeline-item.direita .timeline-marcador {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.timeline-item.esquerda .timeline-marcador {
+  right: 0;
+  transform: translateX(50%);
+}
+
+/* ---------- TEXTOS ---------- */
+.timeline-data {
+  display: block;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.timeline-titulo {
+  margin: 2px 0 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+}
+
+.timeline-descricao {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* ---------- FOTO (opcional) ---------- */
+/* Só existe no HTML quando você coloca "imagem" no momento.
+   Mude width / height / border-radius como quiser. */
+.timeline-foto {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover; /* corta a foto para preencher sem esticar */
+  margin-top: 12px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 769px) {
+  .timeline-pagina {
+    padding: 32px 32px 96px;
+  }
+
+  .timeline {
+    max-width: 1100px;
+  }
+
+  .timeline-foto {
+    max-width: 340px;
+  }
+}
+
+/* Foto alinhada ao lado certo do texto */
+.timeline-item.esquerda .timeline-foto {
+  margin-left: auto;
+}
+
+/* ============================================================
+   CELULAR: linha vai para a esquerda e tudo fica do mesmo lado
+   ============================================================ */
+@media (max-width: 640px) {
+  .timeline::before {
+    left: 14px;
+  }
+
+  .timeline-item,
+  .timeline-item.direita,
+  .timeline-item.esquerda {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 44px;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item.direita .timeline-marcador,
+  .timeline-item.esquerda .timeline-marcador {
+    left: 14px;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item.esquerda .timeline-foto {
+    margin-left: 0;
+  }
+
+  .timeline-foto {
+    max-width: 100%;
+  }
+}

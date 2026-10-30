@@ -56,3 +56,25 @@
     background: #1ed760;
     box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4);
 }
+
+@media (min-width: 769px) {
+    .pagina-inicial {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        padding: 48px;
+    }
+
+    .conteudo-inicial {
+        max-width: 760px;
+        padding: 40px;
+    }
+
+    .titulo {
+        font-size: clamp(48px, 5vw, 72px);
+    }
+
+    .subtitulo-central {
+        font-size: clamp(20px, 2vw, 28px);
+    }
+}

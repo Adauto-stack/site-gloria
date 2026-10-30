@@ -8,7 +8,8 @@ import Layout from './componentes/layout.jsx'
 import TelaCronometro from './componentes/TelaCronometro.jsx'
 import TelaMusica from './componentes/TelaMusica.jsx'
 import TelaAlbum from './componentes/TelaAlbum.jsx'
-
+import LinhaDoTempo from './componentes/linhadotempo.jsx'
+import FotosDela from './componentes/fotosdela.jsx'
 function App(){
   return(
     <>
@@ -21,6 +22,8 @@ function App(){
         <Route path="/TelaCronometro" element={<TelaCronometro />} />
         <Route path="/TelaMusica" element={<TelaMusica />} />
         <Route path="/TelaAlbum" element={<TelaAlbum />} />
+        <Route path="/linhadotempo" element={<LinhaDoTempo />} />
+        <Route path="/fotosdela" element={<FotosDela/>}/>
       </Routes>
     </>
   )

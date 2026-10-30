@@ -8,6 +8,7 @@ function Layout() {
         <Link to="/tela2">Início</Link>
         <Link to="/TelaCronometro">Cronômetro</Link>
         <Link to="/TelaMusica">Músicas</Link>
+        <Link to="/linhadotempo">Linha do Tempo</Link>
         <Link to="/TelaAlbum">Álbum</Link>
       </header>
 

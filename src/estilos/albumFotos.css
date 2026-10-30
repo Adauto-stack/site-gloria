@@ -37,3 +37,23 @@
 
   display: block;
 }
+
+@media (min-width: 769px) {
+  .albumcasal {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .fotos-casal {
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  .pagina > .cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+    justify-content: center;
+    gap: clamp(20px, 2vw, 32px);
+  }
+}

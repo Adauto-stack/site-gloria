@@ -14,6 +14,10 @@ function TelaAlbum() {
                     <AlbumFotos casalfotos="fotos/agente2.jpg"></AlbumFotos>
                     <AlbumFotos casalfotos="fotos/agente3.jpg"></AlbumFotos>
                     <AlbumFotos casalfotos="fotos/agente4.jpg"></AlbumFotos>
+                    <AlbumFotos casalfotos="fotos/agente5.jpg"></AlbumFotos>
+                    <AlbumFotos casalfotos="fotos/agente6.jpg"></AlbumFotos>
+                    <AlbumFotos casalfotos="fotos/agente7.jpg"></AlbumFotos>
+                    <AlbumFotos casalfotos="fotos/nosDois.jpg"></AlbumFotos>
                 </div>
         </div>
     )

@@ -23,3 +23,40 @@
   align-items: center;
 
 }
+
+@media (min-width: 769px) {
+  .titulodois {
+    width: min(100% - 48px, 1200px);
+    margin: 48px auto 36px;
+  }
+
+  .cards-container {
+    width: min(100% - 48px, 1400px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+    justify-content: center;
+    gap: clamp(20px, 2vw, 32px);
+  }
+
+  .secao-musica {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    width: min(100% - 48px, 1200px);
+    margin: 0 auto 48px;
+  }
+
+  .secao-musica > .titulodois {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 24px 0 12px;
+  }
+
+  .secao-musica .player-card {
+    width: 100%;
+    margin: 0;
+  }
+}

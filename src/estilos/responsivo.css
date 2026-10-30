@@ -20,3 +20,14 @@
 
     margin: 40px 0;
 }
+
+@media (min-width: 769px) {
+    .pagina {
+        width: min(100%, 1440px);
+        padding: 40px clamp(24px, 5vw, 72px);
+    }
+
+    .pagina > .titulodois {
+        width: 100%;
+    }
+}

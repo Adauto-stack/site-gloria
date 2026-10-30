@@ -121,3 +121,9 @@
   background: #169c45;
 
 }
+
+@media (min-width: 769px) {
+  .player-card {
+    max-width: 280px;
+  }
+}

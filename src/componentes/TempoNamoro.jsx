@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import '/./src/estilos/temponamoro.css'
 function TempoNamoro() {
 
-  const dataInicio = new Date("Em breve"); // data que eu pedi ela em namoro
+  const dataInicio = new Date("2026-10-23T19:40:00"); // data que eu pedi ela em namoro
 
   const [tempo, setTempo] = useState({
     dias: 0,

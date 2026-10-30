@@ -1,4 +1,4 @@
-import albumFotos from './AlbumFotos.jsx';
+import AlbumFotos from './AlbumFotos.jsx';
 function Album() {
     return(
         <div>
