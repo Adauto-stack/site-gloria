@@ -32,7 +32,7 @@ const momentos = [
   {
     data: '20/02/2026',
     titulo: 'Nossa primeira conversa',
-    imagem: './dist/fotos/print.jpg', // exemplo com foto
+    imagem: './fotos/print.jpeg', // exemplo com foto
   },
   {
     data: '25/02/2026',
@@ -44,7 +44,7 @@ const momentos = [
     data: '12/03/2026',
     titulo: 'O Dia que você disse que me amava',
     descricao: 'O dia que eu dormi feliz em saber que você me amava, e eu também te amava.',
-    imagem: './dist/fotos/print1.jpg',
+    imagem: './fotos/print.jpeg',
   },
   {
     data: '04/04/2026',
@@ -92,7 +92,7 @@ const momentos = [
     data: '23/10/2026',
     titulo: 'Nova etapa',
     descricao: 'O dia em que oficializamos o nosso namoro',
-    imagem: './dist/fotos/nosDois.jpg'
+    imagem: './fotos/nosDois.jpg'
   },
         {
     data: '∞',
