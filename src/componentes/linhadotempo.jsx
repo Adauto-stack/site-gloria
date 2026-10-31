@@ -62,7 +62,7 @@ const momentos = [
     data: '12/06/2023',
     titulo: 'Sua primeira vez aqui em casa',
     descricao: 'Era logo no dia dos namoraddos',
-    imagem: './dist/fotos/agente5.jpg'
+    imagem: './fotos/agente5.jpg'
   },
     {
     data: '27/07/2023',
@@ -98,7 +98,7 @@ const momentos = [
     data: '∞',
     titulo: 'Pra sempre nós',
     descricao: 'Não importa o momento, nunca deixaremos de nos amar.',
-    imagem: './dist/fotos/agente2.jpg'
+    imagem: './fotos/agente2.jpg'
   },
 
   
