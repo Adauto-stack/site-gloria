@@ -32,7 +32,7 @@ const momentos = [
   {
     data: '20/02/2026',
     titulo: 'Nossa primeira conversa',
-    imagem: './fotos/print.jpeg', // exemplo com foto
+    imagem: './fotos/print1.jpeg', // exemplo com foto
   },
   {
     data: '25/02/2026',
